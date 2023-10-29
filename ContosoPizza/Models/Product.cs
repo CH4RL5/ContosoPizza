@@ -8,5 +8,15 @@ namespace ContosoPizza.Models
         public string Name { get; set; } = null!;
         [Column(TypeName = "decimal(6,2)")]
         public decimal Price { get; set; }
+        public Product()
+        {
+        }
+        public Product(String pName, Decimal pPrice)
+        {
+            this.Name = pName;
+            this.Price = pPrice;    
+        }
     }
+   
+
 }
